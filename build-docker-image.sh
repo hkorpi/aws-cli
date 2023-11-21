@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-docker build . --tag aws-cli-sm
+docker build --build-arg uid=$UID --build-arg gid=$(id -g) . --tag aws-cli-sm
 
